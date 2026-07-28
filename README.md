@@ -1,1 +1,31 @@
 # Productivity-Planner
+
+ Productivity Planner
+A lightweight, browser‑based daily planner with a built‑in Pomodoro timer. Yay!!
+All data is saved in your browser’s local storage – no server required. Woww!!
+
+✨ Features
+Daily schedule (6 AM – 10 PM) – click any slot to add/edit events.
+Task list – add, check off, and delete tasks.
+Pomodoro timer – 25/5/15 minute work/break cycles with visual progress.
+Persistent data – your schedule, tasks, and timer state survive page reloads.
+Responsive – works on desktop and mobile. 
+Just very convinient! it really helps! :)))
+🚀 Demo
+Just open index.html in any modern browser.
+No installation, no dependencies.
+
+🗂️ Project Structure
+index.html – structure and layout.
+style.css – modern, clean styling.
+script.js – all logic (DOM handling, localStorage, timer).
+README.md – this file.
+📦 How to Use
+Clone or download the repository.
+Open index.html in your browser.
+Start planning your day!
+💾 Data
+All data is stored using the browser’s localStorage. Clearing your browser data will reset the planner.
+Hope you enjoy <3
+📜 License
+MIT – feel free to modify and share.
