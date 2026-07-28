@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Productivity Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="current-date"></h1>
+  </header>
+
+  <main class="planner-grid">
+    <!-- Daily Schedule -->
+    <section class="schedule">
+      <h2>📅 Daily Schedule</h2>
+      <div id="time-slots" class="time-slots">
+        <!-- dynamically filled by JS -->
+      </div>
+    </section>
+
+    <!-- Task List -->
+    <section class="tasks">
+      <h2>✅ Tasks</h2>
+      <div class="task-input">
+        <input type="text" id="new-task" placeholder="Add a task..." />
+        <button id="add-task-btn">+</button>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+      <div class="task-actions">
+        <button id="clear-completed">Clear completed</button>
+      </div>
+    </section>
+
+    <!-- Pomodoro Timer -->
+    <section class="pomodoro">
+      <h2>⏱️ Focus Timer</h2>
+      <div class="timer-circle">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" class="timer-bg" />
+          <circle cx="50" cy="50" r="45" class="timer-progress" id="timer-progress" />
+        </svg>
+        <div class="timer-display" id="timer-display">25:00</div>
+      </div>
+      <div class="timer-controls">
+        <button id="start-pause-btn">▶ Start</button>
+        <button id="reset-btn">↺ Reset</button>
+      </div>
+      <div class="timer-mode">
+        <button class="mode-btn active" data-minutes="25">Work</button>
+        <button class="mode-btn" data-minutes="5">Break</button>
+        <button class="mode-btn" data-minutes="15">Long Break</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
